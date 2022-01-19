@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Онлайн магазин</title>
+{% endblock %}
+
+{% block content %}
+
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+
+
+
+  <ul class="list-unstyled mt-3 mb-4">
+
+
+
+          </div>
+          <div class="card-body">
+              <h4 > {{ data.title }}</h4>
+              <br>
+              <img src="{{ url_for('static', filename="images/" + data.image_name) }}" alt="">
+              <br>
+              <br>
+              <li>{{ data.price}} Рублей</li>
+              <li>{{ data.breed }}</li>
+              <li>{{ data.age }} месяцев</li>
+              <li>{{ data.description }}</li>
+            </ul>
+
+
+
+
+
+    </div>
+
+
+
+  </main>
+
+{% endblock %}
